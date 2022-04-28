@@ -9,6 +9,7 @@ import pacientes.Paciente;
 public class Test {
 	public static void main(String[] args) {
 		
+		//Polimorfismo
 		Paciente p1 = new Paciente(20,"Andres",45, true);
 		Paciente p2 = new Paciente(12,"Carlos",36, true);
 		Paciente p3 = new Paciente(45,"Nela",38, true);
@@ -27,6 +28,7 @@ public class Test {
 		lista2.add(p5);
 		lista2.add(p6);
 		
+		//Inyeccion de dependencias o composicion
 		HospitalMexico hosMexico = new HospitalMexico(lista1);
 		HospitalNicoya hosNicoya = new HospitalNicoya(lista2);
 		

@@ -1,7 +1,8 @@
 package pacientes;
 
 public class Paciente {
-	
+
+//Inmutabilidad y Encapsulacion
 private final int edad;
 private final String nombre;
 private final int temperatura;

@@ -1,6 +1,6 @@
 package hospitales;
 
-public enum Hospital {
+public enum Hospital { //Encapsulacion de valores
 	
 		NICOYA("Hospital de Nicoya"), MEXICO("Hospital Mexico");
 		

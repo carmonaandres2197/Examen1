@@ -9,7 +9,7 @@ import tipoPruebasCovid.PruebaCovid19;
 import tipoPruebasCovid.PruebaPCR;
 import tipoPruebasCovid.PruebaRapida;
 
-public abstract class OMS {
+public abstract class OMS { // Patron diseño template 
 	
 	private List<Paciente> pacientes = new ArrayList<>();
 
@@ -19,8 +19,10 @@ public abstract class OMS {
 	
 	public abstract Hospital getNombreHospital();
 	
-	protected abstract boolean isGamHospital();
+	protected abstract boolean isGamHospital(); //Encapsulacion
 	
+	
+	//Esto es permitido por el polimorfismo
 	private List<PruebaCovid19> diagnosticar() {
 		
 		List<PruebaCovid19> resultadoDiagnostico = new ArrayList<>();

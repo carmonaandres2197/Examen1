@@ -5,7 +5,7 @@ import java.util.List;
 import oms.OMS;
 import pacientes.Paciente;
 
-public class HospitalNicoya extends OMS{
+public class HospitalNicoya extends OMS{ // Patron diseño template 
 	
 	private List<Paciente> listaPacientes;
 
@@ -14,13 +14,13 @@ public class HospitalNicoya extends OMS{
 		this.listaPacientes = pacientes;
 	}
 
-	@Override
+	@Override //Sobreescritura de metodos
 	public Hospital getNombreHospital() {
 		
 		return Hospital.NICOYA;
 	}
 
-	@Override
+	@Override //Sobreescritura de metodos
 	protected boolean isGamHospital() {
 		
 		return false;
